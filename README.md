@@ -1,7 +1,11 @@
-# React Tailwindcss Boilerplate build with Vite
+# React Tailwindcss FluentUI Boilerplate build with Vite
+
+Raw: [reactjs-vite-tailwindcss-boilerplate
+](https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate)
 
 This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
-
+include [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)  
+It's import `@vitejs/plugin-react` to using react 17 [New JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)
 ## What is inside?
 
 This project uses many tools like:
@@ -14,6 +18,7 @@ This project uses many tools like:
 - [Tailwindcss](https://tailwindcss.com)
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
+- [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)
 
 ## Getting Started
 
@@ -22,7 +27,7 @@ This project uses many tools like:
 Create the project.
 
 ```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+pnpx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
 ```
 
 Access the project directory.
@@ -34,13 +39,13 @@ cd my-app
 Install dependencies.
 
 ```bash
-npm install
+pnpm install
 ```
 
 Serve with hot reload at http://localhost:3000.
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ### Lint
