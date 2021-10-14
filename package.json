@@ -1,0 +1,58 @@
+{
+  "name": "reactjs-vite-tailwindcss-boilerplate",
+  "description": "This is a React + vite boilerplate to be used with Tailwindcss.",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "João Paulo Moraes",
+    "email": "joaopaulomoraes@outlook.com",
+    "url": "https://github.com/joaopaulomoraes"
+  },
+  "bugs": {
+    "url": "https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate/issues",
+    "email": "joaopaulomoraes@outlook.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "jest",
+    "lint": "eslint src --max-warnings=0",
+    "fix": "eslint src --max-warnings=0 --fix"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.36.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.5",
+    "@types/react": "^17.0.29",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@vitejs/plugin-react": "^1.0.4",
+    "autoprefixer": "^10.3.7",
+    "babel-jest": "^27.2.5",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-tailwindcss": "^1.17.0",
+    "jest": "^27.2.5",
+    "postcss": "^8.3.9",
+    "prettier": "2.4.1",
+    "react-test-renderer": "^17.0.2",
+    "tailwindcss": "^2.2.16",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.7"
+  }
+}
