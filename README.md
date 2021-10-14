@@ -27,7 +27,7 @@ This project uses many tools like:
 Create the project.
 
 ```bash
-pnpx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+pnpx degit frisktale/reactjs-vite-tailwindcss-fluentui-boilerplate my-app
 ```
 
 Access the project directory.
