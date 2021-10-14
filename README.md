@@ -20,6 +20,10 @@ This project uses many tools like:
 - [Prettier](https://prettier.io)
 - [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)
 
+
+集成了github action。在仓库的secrets中添加 key为`ACTION_DEPLOY_KEY`的ssh私钥即可自动部署到github page。  
+使用pnpm做包管理（删除了原仓库的packge-lock.json）  
+prettier规则中设置了句尾自动添加分号（个人习惯）  
 ## Getting Started
 
 ### Install
