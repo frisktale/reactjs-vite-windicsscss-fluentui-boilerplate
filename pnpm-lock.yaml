@@ -32,6 +32,7 @@ specifiers:
   tailwindcss: ^2.2.17
   typescript: ^4.4.4
   vite: ^2.6.7
+  vite-plugin-compression: ^0.3.5
 
 dependencies:
   '@fluentui/react': 8.36.5_50c1a12272dadccf7b9591ca98b78cad
@@ -67,6 +68,7 @@ devDependencies:
   tailwindcss: 2.2.17_96f83969316717847b3edf58a3f353f3
   typescript: 4.4.4
   vite: 2.6.7
+  vite-plugin-compression: 0.3.5_vite@2.6.7
 
 packages:
 
@@ -5594,6 +5596,19 @@ packages:
       '@types/istanbul-lib-coverage': 2.0.3
       convert-source-map: 1.8.0
       source-map: 0.7.3
+    dev: true
+
+  /vite-plugin-compression/0.3.5_vite@2.6.7:
+    resolution: {integrity: sha512-W+zKccNTDRYPsM6MzbVGTX2hvnsVrxKfmGD2Z23VgqinFKhtmwGzNNFsnbslXbeTGHXclaE7MO5nm7O1cNY3ZA==}
+    peerDependencies:
+      vite: '>=2.0.0'
+    dependencies:
+      chalk: 4.1.2
+      debug: 4.3.2
+      fs-extra: 10.0.0
+      vite: 2.6.7
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /vite/2.6.7:
