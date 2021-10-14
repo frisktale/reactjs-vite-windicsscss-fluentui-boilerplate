@@ -8,19 +8,28 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [14.x]
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Setup PNPM
+      # You may pin to the exact commit or the version.
+      # uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
+      uses: pnpm/action-setup@v2.0.1
+      with:
+        # Version of PNPM to install
+        version: 6.17.0
     - name: Install Packages
-      run: npm install
+      run: pnpm i
     - name: Build page
-      run: npm run build
+      run: pnpm build
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
         publish_dir: ./dist
+
+
