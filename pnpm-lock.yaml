@@ -14,8 +14,8 @@ specifiers:
   '@types/react-dom': ^17.0.9
   '@typescript-eslint/eslint-plugin': ^5.0.0
   '@typescript-eslint/parser': ^5.0.0
+  '@vitejs/plugin-legacy': ^1.6.2
   '@vitejs/plugin-react': ^1.0.4
-  autoprefixer: ^10.3.7
   babel-jest: ^27.2.5
   eslint: ^8.0.1
   eslint-config-prettier: ^8.3.0
@@ -24,15 +24,15 @@ specifiers:
   eslint-plugin-react-hooks: ^4.2.0
   eslint-plugin-tailwindcss: ^1.17.0
   jest: ^27.2.5
-  postcss: ^8.3.9
   prettier: 2.4.1
   react: ^17.0.2
   react-dom: ^17.0.2
   react-test-renderer: ^17.0.2
-  tailwindcss: ^2.2.17
   typescript: ^4.4.4
   vite: ^2.6.7
   vite-plugin-compression: ^0.3.5
+  vite-plugin-windicss: ^1.4.12
+  windicss: ^3.1.9
 
 dependencies:
   '@fluentui/react': 8.36.5_954407d91e6d01829dd823686fa07725
@@ -52,25 +52,31 @@ devDependencies:
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 5.0.0_3b49a3094ddb22ccc5b4c2c2360792e0
   '@typescript-eslint/parser': 5.0.0_eslint@8.0.1+typescript@4.4.4
+  '@vitejs/plugin-legacy': 1.6.2_vite@2.6.7
   '@vitejs/plugin-react': 1.0.4
-  autoprefixer: 10.3.7_postcss@8.3.9
   babel-jest: 27.2.5_@babel+core@7.15.8
   eslint: 8.0.1
   eslint-config-prettier: 8.3.0_eslint@8.0.1
   eslint-plugin-prettier: 4.0.0_15313026b01cdd263118061498e273ac
   eslint-plugin-react: 7.26.1_eslint@8.0.1
   eslint-plugin-react-hooks: 4.2.0_eslint@8.0.1
-  eslint-plugin-tailwindcss: 1.17.0_autoprefixer@10.3.7
+  eslint-plugin-tailwindcss: 1.17.0
   jest: 27.2.5
-  postcss: 8.3.9
   prettier: 2.4.1
   react-test-renderer: 17.0.2_react@17.0.2
-  tailwindcss: 2.2.17_96f83969316717847b3edf58a3f353f3
   typescript: 4.4.4
   vite: 2.6.7
   vite-plugin-compression: 0.3.5_vite@2.6.7
+  vite-plugin-windicss: 1.4.12_vite@2.6.7
+  windicss: 3.1.9
 
 packages:
+
+  /@antfu/utils/0.3.0:
+    resolution: {integrity: sha512-UU8TLr/EoXdg7OjMp0h9oDoIAVr+Z/oW9cpOxQQyrsz6Qzd2ms/1CdWx8fl2OQdFpxGmq5Vc4TwfLHId6nAZjA==}
+    dependencies:
+      '@types/throttle-debounce': 2.1.0
+    dev: true
 
   /@babel/code-frame/7.15.8:
     resolution: {integrity: sha512-2IAnmn8zbvC/jKYhq5Ki9I+DwjlrtMPUCH/CpHvqI4dNnlwHwsxoIhlc8WcYY5LSYknXQtAlFYuHfqAFCvQ4Wg==}
@@ -1294,6 +1300,11 @@ packages:
       regenerator-runtime: 0.13.9
     dev: true
 
+  /@babel/standalone/7.15.8:
+    resolution: {integrity: sha512-EF2uQLeuwflnPRGetWH2Z400ITOSK7YbkXIKxY91EWSiOJ8xsbupT3sx3sFRwVyQgjsHSILFDzLcSo/rGspLhQ==}
+    engines: {node: '>=6.9.0'}
+    dev: true
+
   /@babel/template/7.15.4:
     resolution: {integrity: sha512-UgBAfEa1oGuYgDIPM2G+aHa4Nlo9Lh6mGD2bDBGMTbYnc38vulXPuC1MGjYILIEmlwl6Rd+BPR9ee3gm20CBtg==}
     engines: {node: '>=6.9.0'}
@@ -1943,6 +1954,10 @@ packages:
       '@types/jest': 27.0.2
     dev: true
 
+  /@types/throttle-debounce/2.1.0:
+    resolution: {integrity: sha512-5eQEtSCoESnh2FsiLTxE121IiE60hnMqcb435fShf4bpLRjEu1Eoekht23y6zXS9Ts3l+Szu3TARnTsA0GkOkQ==}
+    dev: true
+
   /@types/yargs-parser/20.2.1:
     resolution: {integrity: sha512-7tFImggNeNBVMsn0vLrpn1H1uPrUBdnARPTpZoitY37ZrdJREzf7I16tMrlK3hen349gr1NYh8CmZQa7CTG6Aw==}
     dev: true
@@ -2059,6 +2074,20 @@ packages:
       eslint-visitor-keys: 3.0.0
     dev: true
 
+  /@vitejs/plugin-legacy/1.6.2_vite@2.6.7:
+    resolution: {integrity: sha512-p5Bv/827WUpVN2m95ZYXzmjE3AblFE4CHasVoZ7dIwOPlyNcpg70SehEi5AWqyC0E7C1rHD8Nju9rWoV9uBLiw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      vite: ^2.0.0
+    dependencies:
+      '@babel/standalone': 7.15.8
+      core-js: 3.18.3
+      magic-string: 0.25.7
+      regenerator-runtime: 0.13.9
+      systemjs: 6.11.0
+      vite: 2.6.7
+    dev: true
+
   /@vitejs/plugin-react/1.0.4:
     resolution: {integrity: sha512-38/w1q2FON4e/es8WnAW0ZOa/RIOoOrpeWNUkgY6+u+M1eQZjyWWI0piLRM6fbDnm8Lm8Qtged8A7OZ/YnkNtw==}
     engines: {node: '>=12.0.0'}
@@ -2071,6 +2100,30 @@ packages:
       '@rollup/pluginutils': 4.1.1
       react-refresh: 0.10.0
       resolve: 1.20.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@windicss/config/1.4.12:
+    resolution: {integrity: sha512-+ckfkRoWC8wia5o7iCyDmydiJEkjX6lVEb6a2QVPI9WQ9Mi7hqfgOoStijOsEn0wIz95FDiOfVe5aSb1V4jEtw==}
+    dependencies:
+      debug: 4.3.2
+      jiti: 1.12.9
+      windicss: 3.1.9
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@windicss/plugin-utils/1.4.12:
+    resolution: {integrity: sha512-ixYflwELxEjHyh0B9HqTwDp1d3v5IWtUucVY84o41ZU53BkuRw1lKbNlLMqbrtbk8p8rAQxjuwWZkWxFYi77tQ==}
+    dependencies:
+      '@antfu/utils': 0.3.0
+      '@windicss/config': 1.4.12
+      debug: 4.3.2
+      fast-glob: 3.2.7
+      magic-string: 0.25.7
+      micromatch: 4.0.4
+      windicss: 3.1.9
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2236,22 +2289,6 @@ packages:
     resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
     engines: {node: '>= 4.5.0'}
     hasBin: true
-    dev: true
-
-  /autoprefixer/10.3.7_postcss@8.3.9:
-    resolution: {integrity: sha512-EmGpu0nnQVmMhX8ROoJ7Mx8mKYPlcUHuxkwrRYEYMz85lu7H09v8w6R1P0JPdn/hKU32GjpLBFEOuIlDWCRWvg==}
-    engines: {node: ^10 || ^12 || >=14}
-    hasBin: true
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      browserslist: 4.17.4
-      caniuse-lite: 1.0.30001267
-      fraction.js: 4.1.1
-      normalize-range: 0.1.2
-      picocolors: 0.2.1
-      postcss: 8.3.9
-      postcss-value-parser: 4.1.0
     dev: true
 
   /babel-jest/27.2.5_@babel+core@7.15.8:
@@ -2590,6 +2627,11 @@ packages:
 
   /core-js-pure/3.18.3:
     resolution: {integrity: sha512-qfskyO/KjtbYn09bn1IPkuhHl5PlJ6IzJ9s9sraJ1EqcuGyLGKzhSM1cY0zgyL9hx42eulQLZ6WaeK5ycJCkqw==}
+    requiresBuild: true
+    dev: true
+
+  /core-js/3.18.3:
+    resolution: {integrity: sha512-tReEhtMReZaPFVw7dajMx0vlsz3oOb8ajgPoHVYGxr8ErnZ6PcYEvvmjGmXlfpnxpkYSdOQttjB+MvVbCGfvLw==}
     requiresBuild: true
     dev: true
 
@@ -3089,13 +3131,13 @@ packages:
       string.prototype.matchall: 4.0.6
     dev: true
 
-  /eslint-plugin-tailwindcss/1.17.0_autoprefixer@10.3.7:
+  /eslint-plugin-tailwindcss/1.17.0:
     resolution: {integrity: sha512-IoaC0s2j0Cb+fXBZVxtFZe+0PQ3SaFJ2PK/mYvG2uGvIGKaU9AaLOVotCwMZIYv9oWVssyFTIehPqwJQWY2fAQ==}
     engines: {node: '>=12.13.0'}
     dependencies:
       fast-glob: 3.2.7
       postcss: 8.3.9
-      tailwindcss: 2.2.17_96f83969316717847b3edf58a3f353f3
+      tailwindcss: 2.2.17_postcss@8.3.9
     transitivePeerDependencies:
       - autoprefixer
       - ts-node
@@ -3344,10 +3386,6 @@ packages:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       mime-types: 2.1.33
-    dev: true
-
-  /fraction.js/4.1.1:
-    resolution: {integrity: sha512-MHOhvvxHTfRFpF1geTK9czMIZ6xclsEor2wkIGYYq+PxcQqT7vStJqjhe6S1TenZrMZzo+wlqOufBDVepUEgPg==}
     dev: true
 
   /fs-extra/10.0.0:
@@ -4303,6 +4341,11 @@ packages:
       - utf-8-validate
     dev: true
 
+  /jiti/1.12.9:
+    resolution: {integrity: sha512-TdcJywkQtcwLxogc4rSMAi479G2eDPzfW0fLySks7TPhgZZ4s/tM6stnzayIh3gS/db3zExWJyUx4cNWrwAmoQ==}
+    hasBin: true
+    dev: true
+
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -4486,6 +4529,12 @@ packages:
     hasBin: true
     dev: true
 
+  /magic-string/0.25.7:
+    resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: true
+
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
@@ -4588,11 +4637,6 @@ packages:
 
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
-  /normalize-range/0.1.2:
-    resolution: {integrity: sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -5256,6 +5300,10 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  /sourcemap-codec/1.4.8:
+    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    dev: true
+
   /sprintf-js/1.0.3:
     resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=}
     dev: true
@@ -5373,7 +5421,11 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /tailwindcss/2.2.17_96f83969316717847b3edf58a3f353f3:
+  /systemjs/6.11.0:
+    resolution: {integrity: sha512-7YPIY44j+BoY+E6cGBSw0oCU8SNTTIHKZgftcBdwWkDzs/M86Fdlr21FrzAyph7Zo8r3CFGscyFe4rrBtixrBg==}
+    dev: true
+
+  /tailwindcss/2.2.17_postcss@8.3.9:
     resolution: {integrity: sha512-WgRpn+Pxn7eWqlruxnxEbL9ByVRWi3iC10z4b6dW0zSdnkPVC4hPMSWLQkkW8GCyBIv/vbJ0bxIi9dVrl4CfoA==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -5382,7 +5434,6 @@ packages:
       postcss: ^8.0.9
     dependencies:
       arg: 5.0.1
-      autoprefixer: 10.3.7_postcss@8.3.9
       bytes: 3.1.0
       chalk: 4.1.2
       chokidar: 3.5.2
@@ -5620,6 +5671,20 @@ packages:
       - supports-color
     dev: true
 
+  /vite-plugin-windicss/1.4.12_vite@2.6.7:
+    resolution: {integrity: sha512-5YLT7e72z1vCTSmprU/KxtRg22ySN+H19Qxy67lbG3mEbq8YbheOlmVhbqNqSv2MjFVhFqu72Q1FkkjyWENyQQ==}
+    peerDependencies:
+      vite: ^2.0.1
+    dependencies:
+      '@windicss/plugin-utils': 1.4.12
+      chalk: 4.1.2
+      debug: 4.3.2
+      vite: 2.6.7
+      windicss: 3.1.9
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /vite/2.6.7:
     resolution: {integrity: sha512-ewk//jve9k6vlU8PfJmWUHN8k0YYdw4VaKOMvoQ3nT2Pb6k5OSMKQi4jPOzVH/TlUqMsCrq7IJ80xcuDDVyigg==}
     engines: {node: '>=12.2.0'}
@@ -5708,6 +5773,12 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
+    dev: true
+
+  /windicss/3.1.9:
+    resolution: {integrity: sha512-5YoKvXeCQXIdwc91BoOgpKbIImr2JS8I14rPMa/5dKDDPA4ot3NgICWKELkml39R/8rn4Q0BVUUTqN+w+hjDSA==}
+    engines: {node: '>= 12'}
+    hasBin: true
     dev: true
 
   /word-wrap/1.2.3:
