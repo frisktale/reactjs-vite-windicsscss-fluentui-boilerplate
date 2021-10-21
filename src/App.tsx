@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { DefaultButton } from '@fluentui/react/lib/Button';
 import { TextField } from '@fluentui/react/lib/TextField';
 import Avatar from './components/Avatar';
 
 function App() {
+
+  const [count, setCount] = useState(0)
+
   return (
     <div className="bg-white">
       <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 mx-auto max-w-screen-xl">
@@ -21,8 +25,11 @@ function App() {
             />
           </p>
           <p>
-            <DefaultButton className="bg-blue-500 hover:bg-red-500">
-              Hover
+            <DefaultButton
+              className="border border-gray-400 rounded px-4 py-2 mt-4 hover:(bg-teal-400 border-teal-400)"
+              onClick={() => setCount(count => count + 1)}
+            >
+              count is: {count}
             </DefaultButton>
           </p>
           <TextField label="输入" className="focus:ring-4 focus:ring-blue-600" />
