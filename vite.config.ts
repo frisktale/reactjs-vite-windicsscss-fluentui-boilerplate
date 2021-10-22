@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 import viteCompression from 'vite-plugin-compression';
-import legacy from '@vitejs/plugin-legacy'
-import WindiCSS from 'vite-plugin-windicss'
+import legacy from '@vitejs/plugin-legacy';
+import WindiCSS from 'vite-plugin-windicss';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -17,5 +17,5 @@ export default defineConfig({
   server: {
     host: true
   },
-  base: "./"
-})
+  base: './'
+});

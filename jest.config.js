@@ -5,4 +5,4 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.ts(x)'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest']
-}
+};
