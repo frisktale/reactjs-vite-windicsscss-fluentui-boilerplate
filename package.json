@@ -1,16 +1,16 @@
 {
-  "name": "reactjs-vite-tailwindcss-boilerplate",
-  "description": "This is a React + vite boilerplate to be used with Tailwindcss.",
+  "name": "reactjs-vite-windicss-boilerplate",
+  "description": "This is a React + vite boilerplate to be used with Windicss.",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "João Paulo Moraes",
-    "email": "joaopaulomoraes@outlook.com",
-    "url": "https://github.com/joaopaulomoraes"
+    "name": "frisktale",
+    "email": "frisktale@live.com",
+    "url": "https://github.com/frisktale"
   },
   "bugs": {
-    "url": "https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate/issues",
-    "email": "joaopaulomoraes@outlook.com"
+    "url": "https://github.com/frisktale/reactjs-vite-windicsscss-fluentui-boilerplate",
+    "email": "frisktale@live.com"
   },
   "scripts": {
     "dev": "vite",
@@ -46,7 +46,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-tailwindcss": "^1.17.0",
     "jest": "^27.2.5",
     "prettier": "2.4.1",
     "react-test-renderer": "^17.0.2",
