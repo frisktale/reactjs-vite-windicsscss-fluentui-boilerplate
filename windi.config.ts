@@ -14,6 +14,7 @@ export default defineConfig({
     }
   },
   extract: {
-    include: ['src/**/*.{vue,jsx,tsx,svelte}', 'shared/**/*.{vue,ts}']
+    include: ['src/**/*.{ts,tsx}'],
+    exclude: ['node_modules', '.git']
   }
 });

@@ -6,6 +6,7 @@ Raw: [reactjs-vite-tailwindcss-boilerplate
 This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [WindiCss](https://windicss.org/).
 include [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)  
 It's import `@vitejs/plugin-react` to using react 17 [New JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)
+
 ## What is inside?
 
 This project uses many tools like:
@@ -21,11 +22,15 @@ This project uses many tools like:
 - [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)
 
 ## 已知问题
-WindiCss的`bg-color` 在IE下无效（TailwindCss在IE下直接不能用）。
+
+WindiCss 的`bg-color` 在 IE 下无效（TailwindCss 在 IE 下直接不能用）。
+
 ## 特色
-集成了github action。在仓库的secrets中添加 key为`ACTION_DEPLOY_KEY`的ssh私钥即可自动部署到github page。  
-使用pnpm做包管理（删除了原仓库的packge-lock.json）  
-prettier规则中设置了句尾自动添加分号（个人习惯）  
+
+集成了 github action。在仓库的 secrets 中添加 key 为`ACTION_DEPLOY_KEY`的 ssh 私钥即可自动部署到 github page。  
+使用 pnpm 做包管理（删除了原仓库的 packge-lock.json）  
+prettier 规则中设置了句尾自动添加分号（个人习惯）
+
 ## Getting Started
 
 ### Install

@@ -17,8 +17,9 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "jest",
-    "lint": "eslint src --max-warnings=0",
-    "fix": "eslint src --max-warnings=0 --fix"
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint": "pnpm lint:format && pnpm lint:fix "
   },
   "dependencies": {
     "@fluentui/react": "8.37.1",

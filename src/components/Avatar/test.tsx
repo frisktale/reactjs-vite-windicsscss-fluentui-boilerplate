@@ -13,9 +13,7 @@ describe('<Avatar />', () => {
 
     expect(screen.getByRole('img', { name: /Avatar/i })).toBeInTheDocument();
 
-    expect(container.firstChild).toHaveClass(
-      'inline-block w-12 h-12 rounded-full'
-    );
+    expect(container.firstChild).toHaveClass('inline-block w-12 h-12 rounded-full');
 
     expect(container.firstChild).toMatchSnapshot();
   });
@@ -25,9 +23,7 @@ describe('<Avatar />', () => {
 
     expect(screen.getByRole('img', { name: /Avatar/i })).toBeInTheDocument();
 
-    expect(container.firstChild).toHaveClass(
-      'inline-block w-10 h-10 rounded-full'
-    );
+    expect(container.firstChild).toHaveClass('inline-block w-10 h-10 rounded-full');
 
     expect(container.firstChild).toMatchSnapshot();
   });
@@ -37,9 +33,7 @@ describe('<Avatar />', () => {
 
     expect(screen.getByRole('img', { name: /Avatar/i })).toBeInTheDocument();
 
-    expect(container.firstChild).toHaveClass(
-      'inline-block w-12 h-12 rounded-full'
-    );
+    expect(container.firstChild).toHaveClass('inline-block w-12 h-12 rounded-full');
   });
 
   it('should render the large Avatar', () => {
@@ -47,9 +41,7 @@ describe('<Avatar />', () => {
 
     expect(screen.getByRole('img', { name: /Avatar/i })).toBeInTheDocument();
 
-    expect(container.firstChild).toHaveClass(
-      'inline-block w-14 h-14 rounded-full'
-    );
+    expect(container.firstChild).toHaveClass('inline-block w-14 h-14 rounded-full');
 
     expect(container.firstChild).toMatchSnapshot();
   });
