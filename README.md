@@ -11,15 +11,15 @@ It's import `@vitejs/plugin-react` to using react 17 [New JSX Transform](https:/
 
 This project uses many tools like:
 
-- [ReactJS](https://reactjs.org)
-- [Vite](https://vitejs.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Jest](https://jestjs.io)
-- [Testing Library](https://testing-library.com)
-- [WindiCss](https://windicss.org/)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
-- [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)
+-   [ReactJS](https://reactjs.org)
+-   [Vite](https://vitejs.dev)
+-   [TypeScript](https://www.typescriptlang.org)
+-   [Jest](https://jestjs.io)
+-   [Testing Library](https://testing-library.com)
+-   [WindiCss](https://windicss.org/)
+-   [Eslint](https://eslint.org)
+-   [Prettier](https://prettier.io)
+-   [FluentUI](https://developer.microsoft.com/zh-CN/fluentui#/)
 
 ## 已知问题
 

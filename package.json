@@ -1,54 +1,54 @@
 {
-  "name": "reactjs-vite-windicss-boilerplate",
-  "description": "This is a React + vite boilerplate to be used with Windicss.",
-  "version": "0.1.0",
-  "private": true,
-  "author": {
-    "name": "frisktale",
-    "email": "frisktale@live.com",
-    "url": "https://github.com/frisktale"
-  },
-  "bugs": {
-    "url": "https://github.com/frisktale/reactjs-vite-windicsscss-fluentui-boilerplate",
-    "email": "frisktale@live.com"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview",
-    "test": "jest",
-    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
-    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
-    "lint": "pnpm lint:format && pnpm lint:fix "
-  },
-  "dependencies": {
-    "@fluentui/react": "8.37.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.2",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
-    "@vitejs/plugin-legacy": "^1.6.2",
-    "@vitejs/plugin-react": "^1.0.7",
-    "eslint": "^8.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "jest": "^27.3.1",
-    "prettier": "2.4.1",
-    "react-test-renderer": "^17.0.2",
-    "typescript": "^4.4.4",
-    "vite": "^2.6.13",
-    "vite-plugin-compression": "^0.3.5",
-    "vite-plugin-windicss": "^1.4.12",
-    "windicss": "^3.2.0"
-  }
+    "name": "reactjs-vite-windicss-boilerplate",
+    "description": "This is a React + vite boilerplate to be used with Windicss.",
+    "version": "0.1.0",
+    "private": true,
+    "author": {
+        "name": "frisktale",
+        "email": "frisktale@live.com",
+        "url": "https://github.com/frisktale"
+    },
+    "bugs": {
+        "url": "https://github.com/frisktale/reactjs-vite-windicsscss-fluentui-boilerplate",
+        "email": "frisktale@live.com"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "serve": "vite preview",
+        "test": "jest",
+        "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+        "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+        "lint": "pnpm lint:format && pnpm lint:fix "
+    },
+    "dependencies": {
+        "@fluentui/react": "8.37.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.1.2",
+        "@types/jest": "^27.0.2",
+        "@types/node": "^16.11.6",
+        "@types/react": "^17.0.33",
+        "@types/react-dom": "^17.0.10",
+        "@typescript-eslint/eslint-plugin": "^5.2.0",
+        "@typescript-eslint/parser": "^5.2.0",
+        "@vitejs/plugin-legacy": "^1.6.2",
+        "@vitejs/plugin-react": "^1.0.7",
+        "eslint": "^8.1.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.26.1",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "jest": "^27.3.1",
+        "prettier": "2.4.1",
+        "react-test-renderer": "^17.0.2",
+        "typescript": "^4.4.4",
+        "vite": "^2.6.13",
+        "vite-plugin-compression": "^0.3.5",
+        "vite-plugin-windicss": "^1.4.12",
+        "windicss": "^3.2.0"
+    }
 }
