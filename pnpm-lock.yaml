@@ -11,7 +11,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.2.0
   '@typescript-eslint/parser': ^5.2.0
   '@vitejs/plugin-legacy': ^1.6.2
-  '@vitejs/plugin-react': ^1.0.6
+  '@vitejs/plugin-react': ^1.0.7
   eslint: ^8.1.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
@@ -23,10 +23,10 @@ specifiers:
   react-dom: ^17.0.2
   react-test-renderer: ^17.0.2
   typescript: ^4.4.4
-  vite: ^2.6.11
+  vite: ^2.6.13
   vite-plugin-compression: ^0.3.5
   vite-plugin-windicss: ^1.4.12
-  windicss: ^3.1.9
+  windicss: ^3.2.0
 
 dependencies:
   '@fluentui/react': 8.37.1_e26f8fa40c63c048567f55d76f780f53
@@ -42,8 +42,8 @@ devDependencies:
   '@types/react-dom': 17.0.10
   '@typescript-eslint/eslint-plugin': 5.2.0_9a56ca1c5fc1d82b3da3317a5c6f9ab1
   '@typescript-eslint/parser': 5.2.0_eslint@8.1.0+typescript@4.4.4
-  '@vitejs/plugin-legacy': 1.6.2_vite@2.6.11
-  '@vitejs/plugin-react': 1.0.6
+  '@vitejs/plugin-legacy': 1.6.2_vite@2.6.13
+  '@vitejs/plugin-react': 1.0.7
   eslint: 8.1.0
   eslint-config-prettier: 8.3.0_eslint@8.1.0
   eslint-plugin-prettier: 4.0.0_850528f9ec3c0797b9b19a94a36b5ba3
@@ -53,10 +53,10 @@ devDependencies:
   prettier: 2.4.1
   react-test-renderer: 17.0.2_react@17.0.2
   typescript: 4.4.4
-  vite: 2.6.11
-  vite-plugin-compression: 0.3.5_vite@2.6.11
-  vite-plugin-windicss: 1.4.12_vite@2.6.11
-  windicss: 3.1.9
+  vite: 2.6.13
+  vite-plugin-compression: 0.3.5_vite@2.6.13
+  vite-plugin-windicss: 1.4.12_vite@2.6.13
+  windicss: 3.2.0
 
 packages:
 
@@ -1215,7 +1215,7 @@ packages:
       eslint-visitor-keys: 3.0.0
     dev: true
 
-  /@vitejs/plugin-legacy/1.6.2_vite@2.6.11:
+  /@vitejs/plugin-legacy/1.6.2_vite@2.6.13:
     resolution: {integrity: sha512-p5Bv/827WUpVN2m95ZYXzmjE3AblFE4CHasVoZ7dIwOPlyNcpg70SehEi5AWqyC0E7C1rHD8Nju9rWoV9uBLiw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1226,11 +1226,11 @@ packages:
       magic-string: 0.25.7
       regenerator-runtime: 0.13.9
       systemjs: 6.11.0
-      vite: 2.6.11
+      vite: 2.6.13
     dev: true
 
-  /@vitejs/plugin-react/1.0.6:
-    resolution: {integrity: sha512-wzbvi6w3w8yLDjurGwsZ0+fGW4zTSXnUzGz6wGeMrsnn14iYSyilqr3J1K2KbZ83Ramk+VBChh3FmpB09QpoUw==}
+  /@vitejs/plugin-react/1.0.7:
+    resolution: {integrity: sha512-dzxzohFOAVVXpGlFn6Uvw2xaSLp80Vjmg2e5G1XdMV266vVKrcDqg9CWP/AiJiXuubNUdgy1k4E8dNXI6WCyhw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@babel/core': 7.15.8
@@ -1250,7 +1250,7 @@ packages:
     dependencies:
       debug: 4.3.2
       jiti: 1.12.9
-      windicss: 3.1.9
+      windicss: 3.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1264,7 +1264,7 @@ packages:
       fast-glob: 3.2.7
       magic-string: 0.25.7
       micromatch: 4.0.4
-      windicss: 3.1.9
+      windicss: 3.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4306,7 +4306,7 @@ packages:
       source-map: 0.7.3
     dev: true
 
-  /vite-plugin-compression/0.3.5_vite@2.6.11:
+  /vite-plugin-compression/0.3.5_vite@2.6.13:
     resolution: {integrity: sha512-W+zKccNTDRYPsM6MzbVGTX2hvnsVrxKfmGD2Z23VgqinFKhtmwGzNNFsnbslXbeTGHXclaE7MO5nm7O1cNY3ZA==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -4314,12 +4314,12 @@ packages:
       chalk: 4.1.2
       debug: 4.3.2
       fs-extra: 10.0.0
-      vite: 2.6.11
+      vite: 2.6.13
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-plugin-windicss/1.4.12_vite@2.6.11:
+  /vite-plugin-windicss/1.4.12_vite@2.6.13:
     resolution: {integrity: sha512-5YLT7e72z1vCTSmprU/KxtRg22ySN+H19Qxy67lbG3mEbq8YbheOlmVhbqNqSv2MjFVhFqu72Q1FkkjyWENyQQ==}
     peerDependencies:
       vite: ^2.0.1
@@ -4327,14 +4327,14 @@ packages:
       '@windicss/plugin-utils': 1.4.12
       chalk: 4.1.2
       debug: 4.3.2
-      vite: 2.6.11
-      windicss: 3.1.9
+      vite: 2.6.13
+      windicss: 3.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.6.11:
-    resolution: {integrity: sha512-JWnGmiO1IFwou9aUWS4N0kMyHcgTTt1+2f4bJyzgBJLJDyAqGEX3HewE4jgrL6V4d9+mxs+lZ4L8HL2kyVBe7A==}
+  /vite/2.6.13:
+    resolution: {integrity: sha512-+tGZ1OxozRirTudl4M3N3UTNJOlxdVo/qBl2IlDEy/ZpTFcskp+k5ncNjayR3bRYTCbqSOFz2JWGN1UmuDMScA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -4423,8 +4423,8 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /windicss/3.1.9:
-    resolution: {integrity: sha512-5YoKvXeCQXIdwc91BoOgpKbIImr2JS8I14rPMa/5dKDDPA4ot3NgICWKELkml39R/8rn4Q0BVUUTqN+w+hjDSA==}
+  /windicss/3.2.0:
+    resolution: {integrity: sha512-z0q789VZXKdRBrAsfkR+1vOYCb7bS1kec1hyaulT4NClNgO9zGObWbiN+9Jwk0Iw7CLdk/QCB/WCF+zVmr0WpQ==}
     engines: {node: '>= 12'}
     hasBin: true
     dev: true
